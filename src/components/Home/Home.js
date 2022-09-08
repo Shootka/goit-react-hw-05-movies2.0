@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { NavLink } from 'react-router-dom';
+import { loadTrendingMovie } from '../../query/loadTrendingMovie';
 
-export const key = 'a75b50598b3600add1a9e8ed401b876c';
 const Home = () => {
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${key}`)
+  loadTrendingMovie()
       .then(r => {
         setTrending(r.data.results);
       });

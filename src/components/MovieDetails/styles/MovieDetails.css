@@ -1,0 +1,30 @@
+.details-card{
+  display: flex;
+  gap: 20px;
+}
+
+.poster{
+  height: 500px;
+}
+
+.marker{
+  font-size: 40px;
+  font-weight: bold;
+}
+.marker-light{
+  font-size: 25px;
+  font-weight: bold;
+}
+.text{
+  font-size: 30px;
+  line-height: 45px;
+}
+.tag{
+  color: brown;
+}
+ul, ol {
+  list-style: none;
+}
+li{
+  margin: 7px;
+}

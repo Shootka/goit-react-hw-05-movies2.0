@@ -1,0 +1,19 @@
+.hero{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 3px solid brown;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 10px ;
+}
+a{
+  text-decoration: none;
+}
+.hero-elem{
+  font-size: 25px;
+}
+.active{
+  color: cadetblue;
+}
