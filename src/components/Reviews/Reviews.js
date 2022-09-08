@@ -9,7 +9,7 @@ const Reviews = () => {
     loadReviewsMovie(movieId)?.then(r => {
         setReviews(r.data?.results);
       });
-  }, []);
+  }, [movieId]);
   return (
     <ul>
       {reviews?.map(({id, author, content}) => {

@@ -11,7 +11,7 @@ const MovieDetails = () => {
   useEffect(() => {
     loadDetailsMovie(movieId)
       .then(r => setCurrentMovie(r.data));
-  }, []);
+  }, [movieId]);
   return (
     <div>
       <button onClick={() => navigation('/')}>back</button>

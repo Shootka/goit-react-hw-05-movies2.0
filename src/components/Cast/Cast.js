@@ -11,12 +11,12 @@ const Cast = () => {
       .then(r => {
         setCast(r.data?.cast);
       })
-  }, []);
+  }, [movieId]);
   return (
     <div>
       {cast.map(({ id, name, profile_path, character }) => {
         return <div key={id * Math.random()}>
-          <img src={`https://image.tmdb.org/t/p/w500${profile_path}`} className={'photo-cast'} alt='photo-cast' />
+          <img src={`https://image.tmdb.org/t/p/w500${profile_path}`} className={'photo-cast'} alt='cast-img' />
           <p>Character: {character}</p>
           <p>Real name: {name}</p>
         </div>
